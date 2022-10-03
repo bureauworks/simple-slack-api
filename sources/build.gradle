@@ -14,7 +14,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'eclipse'
-apply plugin: 'signing'
+//apply plugin: 'signing'
 apply plugin: 'maven-publish'
 apply plugin: 'nebula.optional-base'
 apply plugin: 'com.github.ben-manes.versions'
@@ -150,11 +150,11 @@ artifacts {
     archives javadocJar, sourcesJar
 }
 
-signing {
-   // required false
-    sign configurations.archives
-    sign publishing.publications.mavenJava
-}
+// signing {
+//    // required false
+//     sign configurations.archives
+//     sign publishing.publications.mavenJava
+// }
 
 test {
     testLogging {
